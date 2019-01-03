@@ -7,3 +7,17 @@ before_install:
 
 script:
   - docker run ewfnz/docker-travisci-aws:development yarn test -- --coverage
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "docker-travisci-aws"
+  env: "DockerTravisciAws-env"
+  bucket_name: "elasticbeanstalk-us-east-1-748388487233"
+  bucket_path: "docker-travisci-aws"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: 
+    secure: "$AWS_SECRET_KEY"
+
