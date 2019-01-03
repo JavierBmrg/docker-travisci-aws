@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/JavierBmrg/docker-travisci-aws.svg?branch=master)](https://travis-ci.org/JavierBmrg/docker-travisci-aws)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) for test TravisCI and AWS Elastic Beanstalk
 
 ## Available Scripts
 
